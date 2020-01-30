@@ -1,0 +1,225 @@
+body{
+    overflow-x: hidden;
+}
+.header .navbar-brand img{
+    width:20%;
+}
+.header .nav-link{color:#000!important;width:100px;}
+.navbar ul li:last-child{
+    border:1px solid orange;
+    border-radius:20px;
+    width:120px;
+}
+/* banner */
+.banner{
+    background:url('../assets/banner.jpg')no-repeat left;
+    background-size: cover;
+    padding-top:50px;
+    padding-bottom:100px;
+}
+.banner .nav-link{
+    color:#fff!important;
+    font-weight: bold;
+    cursor: pointer;
+}
+.banner .nav-link.active{
+    color:#f38f39!important;
+    
+    background-color: rgba(255, 255, 255, .6)!important;
+}
+.banner .card{
+    background-color: rgba(255, 255, 255, .6)!important;
+    border:none!important;
+    border-top-left-radius: 20px!important;
+    padding:60px;
+}
+.banner .card input[type=text]{
+    border-top-left-radius: 15px;
+    float:left;
+
+}
+.banner .card input{
+    float:left;
+    width:28%;
+    border-right:1px solid #ccc!important;
+}
+.banner .card select{
+    float:left;
+    width:28%;
+    border-right:1px solid #ccc!important;
+}
+.banner .card button{
+    width:16%;
+    border-radius:0px!important;
+    /* background-color:#f55942!important; */
+    background-image: linear-gradient(to right, #f55147 , #f67a32);
+    padding:8px;
+}
+.banner .card .checkbox{
+     /* background-color:#f55942; */
+     background-image: linear-gradient(to right, #f55147 , #f67a32);
+     width:27%;
+     border-radius: 20px;
+     padding:1px;
+     padding-left:5px;
+     margin-top:10px;
+}
+.banner .card input[type=checkbox]{
+    width:15%!important;
+    float:left!important;
+    margin-top:6px;
+}
+/*Experience*/
+.heading{
+    padding:50px 0px;
+    background:url('../assets/plane.png')no-repeat center;
+    background-size:contain;
+}
+.heading h1{
+font-size:20px;
+font-weight: bold;
+color:#f08a1e;
+}
+.heading p{font-size:12px;}
+.experience{
+    margin-bottom:50px;
+}
+.experience .bottom-content{
+    background-color: rgba(255, 255, 255, .9);
+    bottom:0;
+    padding:10px;
+}
+.experience .bottom-content span{
+    background-color:#ff8812;
+    border-radius: 5px;
+    padding:8px;
+    font-size:13px;
+    position: relative;
+    bottom:15%;
+}
+.experience .bottom-content label span{
+    background-color:transparent;
+    border-radius: 0px;
+    padding:0px;
+    color:orange;
+    font-weight: bold;
+}
+.experience .bottom-content label p{
+    font-size: 10px;
+}
+.experience img{
+    height: 304px;
+    width: 100%;
+}
+.experience .second{
+    font-size:13px;
+}
+/*Footer*/
+footer{
+    margin-bottom:50px;
+}
+footer h5{
+    font-size:15px!important;
+    font-weight: bold;
+}
+footer ul li a{
+    text-decoration: none;
+    color:#a4a7ac;
+    font-size:15px;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color:orange;
+    font-size:15px;
+}
+footer input{
+    background:url('../assets/user.png')no-repeat right;
+    float:left;
+    width:100%;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding:7px 20px;
+    background-origin: content-box
+}
+footer button{
+    background-color:#f6871e;
+    padding:10px;
+    border-radius: 5px;
+    border:none;
+    width: 100%;
+    float:left;
+    margin-top:10px;
+    cursor: pointer;
+}
+.privacy ul li a{
+    text-decoration: none;
+    color:#a4a7ac;
+    font-size:15px;
+}
+.privacy ul li a:hover{
+    text-decoration: none;
+    color:orange;
+    font-size:15px;
+}
+.privacy span{
+    color:#a4a7ac;
+    font-size:15px;
+}
+/*Media Quiries*/
+@media screen and (min-width:992px) and (max-width:1250px){
+    .banner .card{
+        width:85%!important;
+        margin:auto;
+    }
+    .banner .nav{
+        width:75%!important;
+        margin-left:auto!important;
+    }
+}
+@media screen and (min-width:0px) and (max-width:1150px){
+    .banner .card select{
+        width:33.33%;
+    }
+    .banner .card input{
+        width:33.33%;
+    }
+    .banner .card button{
+        width:50%;
+        margin:auto;
+        margin-top:10%;
+    }
+    .banner .card .checkbox{
+        width:30%;
+    }
+}
+@media screen and (min-width:0px) and (max-width:992px){
+.banner .card .checkbox{
+        width:100%;
+        float:left;
+    }
+    .banner .card select{
+        width:100%;
+        border:1px solid #ccc;
+    }
+    .banner .card input{
+        width:100%;
+        border:1px solid #ccc!important;
+        margin-bottom:5px;
+    }
+    .banner .card button{
+        width:100%;
+        float:left;
+        margin-top:5%;
+    }
+}
+@media screen and (min-width:0px) and (max-width:500px){
+.banner .card{
+    padding:30px;
+}
+.banner{
+    padding-bottom:50px;
+}
+.header .navbar-brand img{
+    width:45%;
+}
+}
