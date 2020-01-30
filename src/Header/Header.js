@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import Logo from '../assets/Logo.png';
+import { withRouter } from "react-router";
+
 
 class Header extends Component {
+  constructor(props) {
+  super(props);
+  this.state={
+  }
+}
+onClickLogin = e => {
+  console.log("onClickLogin");
+  this.props.history.push('/login')
+  // window.location.href='/login'
+}
 
     render() {
-
+      console.log("render" , this.props);
         return (
             <div>
                 <header className="float-left w-100 header">
@@ -19,18 +31,21 @@ class Header extends Component {
 
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav ml-auto">
-                                        <li className="nav-item active">
+                                        <li className="nav-item active" onClick={()=>this.props.onClickMyList('myLists')}>
                                             <a className="nav-link text-uppercase" href="#">My LIsts <span className="sr-only">(current)</span></a>
                                         </li>
-                                        <li className="nav-item">
+                                        <li className="nav-item"  onClick={()=>this.props.onClickMyList('myTrips')} >
                                             <a className="nav-link text-uppercase" href="#">My Trips</a>
                                         </li>
-                                        <li className="nav-item dropdown">
+                                        <li className="nav-item dropdown" onClick={()=>this.props.onClickMyList('support')}>
                                             <a className="nav-link  text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Support</a>
                                         </li>
-                                        <li className="nav-item text-center">
-                                            <a className="nav-link text-uppercase w-100" href="#">login</a>
+                                        <li onClick={this.onClickLogin}
+                                            className="nav-item text-center"
+                                            style={{cursor:'pointer'}}>
+
+                                            <a className="nav-link text-uppercase w-100">login</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -42,4 +57,4 @@ class Header extends Component {
         );
     }
 }
-export default Header;
+export default withRouter(Header);

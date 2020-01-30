@@ -7,7 +7,7 @@ class Privacy extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6 text-center text-lg-left text-md-left text-sm-left">
-                            <span><i className="far fa-copyright"></i> 2019 FlyMush. All rights reserved</span>
+                            <span><i className="far fa-copyright"></i> 2019 FlyMust. All rights reserved</span>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 text-lg-right text-md-right text-sm-right text-center">
                             <ul className="list-unstyled m-auto m-lg-0 m-md-0 md-sm-0 w-50 w-lg-auto w-md-auto w-sm-auto p-0 float-lg-right float-md-right float-sm-right float-none">
