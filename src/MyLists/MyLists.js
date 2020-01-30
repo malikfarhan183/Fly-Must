@@ -4,7 +4,7 @@ class MyLists extends Component {
     render() {
         return (
             <div className="float-left w-100 privacy mb-3">
-                 <h1 className='text-center' style={{padding:'20px'}}>My Lists</h1>
+                 <h1 className='text-center' style={{padding:'20px' , color:'#f38f39'}}>My Lists</h1>
             </div>
         );
     }

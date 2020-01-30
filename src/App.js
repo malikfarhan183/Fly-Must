@@ -24,7 +24,8 @@ onClickMyListBtn = e => {
   if(e==='myLists')
       {
         this.setState({
-          pageToLoad:<Booking />
+          pageToLoad:<Booking />,
+          myListActive:true
         })
       }
   else if (e==='myTrips')
@@ -44,7 +45,7 @@ onClickMyListBtn = e => {
     return (
       <div>
         {/* header */}
-        <Header onClickMyList={this.onClickMyListBtn}/>
+        <Header myListActive={this.state.myListActive} onClickMyList={this.onClickMyListBtn}/>
         {/* banner */}
         {this.state.pageToLoad}
         {/*Experience */}
