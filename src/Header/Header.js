@@ -32,13 +32,13 @@ onClickLogin = e => {
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav ml-auto">
                                         <li className="nav-item active" onClick={()=>this.props.onClickMyList('myLists')}>
-                                            <a className="nav-link text-uppercase">My LIsts <span className="sr-only">(current)</span></a>
+                                            <a style={{cursor:'pointer'}}  className="nav-link text-uppercase">My LIsts <span className="sr-only">(current)</span></a>
                                         </li>
                                         <li className="nav-item"  onClick={()=>this.props.onClickMyList('myTrips')} >
-                                            <a className="nav-link text-uppercase">My Trips</a>
+                                            <a style={{cursor:'pointer'}} className="nav-link text-uppercase">My Trips</a>
                                         </li>
                                         <li className="nav-item dropdown" onClick={()=>this.props.onClickMyList('support')}>
-                                            <a className="nav-link  text-uppercase" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a style={{cursor:'pointer'}} className="nav-link  text-uppercase" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Support</a>
                                         </li>
                                         <li onClick={this.onClickLogin}
